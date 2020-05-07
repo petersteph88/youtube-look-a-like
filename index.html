@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -10,153 +9,43 @@
       integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="dependencies/css_file.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="dependencies/youtube_log.jpg" />
-    <title>Youtube</title>
-  </head>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <body>
-    <!-- NAVIGATION -->
-    <nav class="nav-main">
-      <ul class="nav--list">
-        <ul class="nav--left">
-          <li>
-            <a href="#"><i class="fas fa-bars"></i></a>
-          </li>
-          <li>
-            <a href="#"><img src="dependencies/youtube_log.jpg" alt="Youtube logo" /></a>
-          </li>
-        </ul>
+    <link rel="stylesheet" href="files/style.css" />
+    <title>HTML-Forms</title>
+</head>
+<body>
+    <form class="form">
+  <div>
+    <ul>
+    <h1>Create an Intuit account</h1>
+    <p>One account for everything Intuit, including Mint.
+    <a href="#">Learn more</a></p><br>
 
-        <ul class="nav--search">
-          <li>
-            <input class="input-search" type="text" name="Search" placeholder="Search" />
-            <button><i class="fas fa-search"></i></button>
-          </li>
-        </ul>
+    <label class = "label" for="email">Email address</label><br>
+    <input class = "input" type="text" id="email" name="email" required><br><br><br>
 
-        <ul class="nav--right">
-          <li>
-            <a href="#"><i class="fas fa-video"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-th"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-comment"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-bell"></i></a>
-          </li>
-          <li>
-            <a href="#"><img src="dependencies/profile p.png" alt="User Profile picture" /></a>
-          </li>
-        </ul>
-      </ul>
-    </nav>
+    <label class = "label" for="tel">Phone (recommended)</label>
+    <br>
+    <input class = "input" type="tel" id="tel" name="tel" readonly="We strongly recommend adding a phone number. This will help verify your account and keep it safe.">
+    <h5>Standard call, messaging or data rates may apply.</h5><br>
+    <label class = "label" for="psw">Password</label><br>
+    <input class = "input" type="password" id="psw" name="psw" required><i class="fas fa-lock-open padlockspan"></i><br><br><br>
 
-    <!-- VIDEO SECTION -->
+    <li class = "button"> <button type="submit"><i class="fas fa-lock"></i>&nbsp; &nbsp;Create Account</button></li>
 
-    <main>
-      <article>
-        <div class="video">
-            <iframe width="651" height="366" src="https://www.youtube.com/embed/Cyrr2cXZ7KI?list=TLPQMjkwNDIwMjCQCP9vZk_mGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <header>
-          <div class="video-stats">
-            <h1 class="video-title">
-              Jesus Culture - Fresh Outpouring (Live) ft. Kim Walker-Smith
-            </h1>
-            <p>3,331,074 views . Dec 7, 2017</p>
-          </div>
-
-          <nav class="nav-video">
-            <a href="#"><i class="fas fa-thumbs-up"></i>26K</a>
-            <a href="#"><i class="fas fa-thumbs-down"></i>859</a>
-            <a href="#"><i class="fas fa-share"></i>SHARE</a>
-            <a href="#"><i class="fas fa-list"></i>SAVE</a>
-            <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-          </nav>
-        </header>
-
-        <section class="video-description">
-          <img src="dependencies/profile p.png" alt="Google Account Photo" />
-
-          <div class="video-creator">
-            <h2>Jesus Culture</h2>
-
-            <p class="published">929 Subscribers</p>
-
-            <p>
-              Official live worship video of Fresh Outpouring featuring Kim Walker-Smith  from Jesus Culture's new album, Love Has A Name.
-			  Get the album here: http://jcltr.me/love?IQid=yt
-			  Official album playlist here: http://bit.ly/2vJdUi7
-			  Watch the full, live Love Has A Name Night of Worship video here: https://www.youtube.com/watch?v=HT6so... 
-            </p>
-
-            <a href="" class="showmore-btn">show more</a>
-          </div>
-
-          <a class="subscribe-btn">subscribe 2m</a>
-        </section>
-
-        <!-- VIDEO COMMENTS -->
-        <section class="video-comments">
-
-          <div class="comment__stats">
-            <p>554 Comments</p>
-            <a href="#"><i class="fas fa-align-left"></i> SORT BY</a>
-
-          </div>
-
-          <div class="comment__box">
-            <a href="" class="comment__display"><img src="dependencies/profile p.png" alt="Google Account Photo"></a>
-            <input type="text" placeholder="Add a public comment">
-          </div>
+    <h6>By clicking Create account, you agree to our<a href="#">
+Terms</a> and have read and acknowledge our <a href="#">Privacy Statement</a>.</h6>
+    
+    </ul>
+   </div>
+</form>
 
 
-          <div class="comment">
-            <a class="comment__display" href="#"><img src="dependencies/Google Profile k.png" alt="K username Profile"></a>
-            <div class="comment__details">
-              <h4 class="comment__author">Kalu Agu <span>2 days Ago</span></h4>
-              <p>The song is nice. God is good. Wow. Halleluyah! Amen. God bless you. To God be the Glory and Honor.</p>
-              <div class="section__controls">
-                <a href="#"><i class="fas fa-thumbs-up"></i>22</a>
-                <a href="#"><i class="fas fa-thumbs-down"></i></a>
-                <a href="#">REPLY</a>
-              </div>
-              <a href="#">View 3 Replies <i class="fas fa-chevron-down chevron"></i></a>
-            </div>
-          </div>
-       
-        </section>
 
-      </article>
 
-      <!-- Next is the section on the right of the page -->
-      <aside>
-        <div class="video__controls">
-          <p>Up Next</p>
-          <div class="autoplay">
-            <i class="fas fa-toggle-on"></i>
-            <p>AUTOPLAY</p>
-          </div>
-        </div>
 
-        <div class="video__container">
-          <div class="video-box">
-            <img src="dependencies/nextvideo.jpg" alt="Video thumbnail" class="video-box__thumbnail">
-            <div class="video-box__details">
-              <h3>Yahweh - Desperation Band | WOrship Mob Cover</h3>
-              <p>Worship Mob</p>
-              <p>279K views</p>
-            </div>
-          </div>
 
-        </div>
-      </aside>
-
-    </main>
-  </body>
-
+</body>
 </html>
